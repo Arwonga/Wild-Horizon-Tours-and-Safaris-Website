@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Hozorin Tours and safaris</title>
+</head>
+<body>
+    <header>
+      <img src="image/safaritours/wildlogo.png" alt="Logo" class="logo">
+      <img src="image/safaritours/kenya1.png" alt="Logo" class="logo1">
+        <h1><span class="wild">Wild</span> <span class="tour">Horizons</span></h1>
+        <h2>Tours and Safaris</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span class="wild">Home</span></a></li>
+            <li><a href="about.html"><span class="tour">About Us</span></a></li>
+            <li><a href="safaritour.html"><span class="wild">Contact Us</span></a></li>
+            <li><a href=""><img src="image/safaritours/icons/facebook.png" alt="" class="facebook-icon"></a></li>
+            <li><a href=""><img src="image/safaritours/icons/instagram.png" alt="" class="facebook-icon"></a></li>
+            <li><a href=""><img src="image/safaritours/icons/twitter.png" alt="" class="facebook-icon"></a></li>
+        </ul>
+    </nav>
+    <style>
+      header {
+        margin-top: 0px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .logo1 {
+            width: 200px;
+            height: 120px;
+            margin-left: 80px;
+            text-align: right;
+        }
+      .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 80px;
+            text-align: left;
+        }
+        .wild {
+            color: green;
+            font-weight: bold;
+        }
+        .tour {
+            color: brown;
+            font-weight: bold;
+        }
+        h2 {
+            text-align: center;
+            letter-spacing: 10px;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            font-weight: 150;
+            text-decoration-thickness: 1.5px;
+
+        }
+        ul {
+            list-style-type: none;
+            padding: 10px;
+            text-align: right;
+        }
+        li a {
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        li a:hover {
+            color: black;
+        }
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 20px;
+            letter-spacing: 5px;
+        }
+        .slides img {
+            width: 500px;
+            height: 600px;
+            display: none;
+        }
+        .slides img:first-child {
+            display: block;
+        }
+        .card-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .tour-card {
+      background-color: white;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 20px;
+      margin-left: 70px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    .tour-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .tour-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #c96f00;
+      margin: 15px 0 5px;
+    }
+    .tour-price {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .book-button {
+      background-color: red;
+      color: white;
+      padding: 12px 25px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+    }
+    .book-button:hover {
+      background-color:green;
+    }
+    .highlight {
+      color: #cc4e00;
+    }
+
+    .day-trips {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .trip {
+      display: flex;
+      gap: 15px;
+    }
+
+    .trip img {
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .trip-content {
+      max-width: 400px;
+    }
+
+    .trip-title {
+      font-size: 18px;
+      color: #5c2600;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .trip-price {
+      font-size: 16px;
+      color: #cc4e00;
+      margin-bottom: 8px;
+    }
+
+    .trip-description {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 768px) {
+      .day-trips {
+        grid-template-columns: 1fr;
+      }
+
+      .trip {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .trip-content {
+        max-width: none;
+      }
+    }
+    </style>
+    <section class="slideshow">
+        <div class="slides">
+            <img src="image/safaritours/1.jpeg" alt="Image 1">
+            <img src="image/safaritours/2.jpeg" alt="Image 2">
+            <img src="image/safaritours/3.jpeg" alt="Image 3">
+            <img src="image/safaritours/7.jpeg" alt="Image 4">
+        </div>
+    </section>
+    <main>
+        <h3>Welcome to Wild Horizon Tours And Safaris</h3>
+        <h4>Your adventure is about to begin</h4>
+        <h5>Experience the magic of Africa, We create memorable moments</h5>
+    <section class="content">
+        <div class="text">
+            <p><span class="tour"> Horizontal Tours and Safaris</span>, is a well established tour company based in Nairobi, Kenya, It is owned and registered and licensed under Kenya law to provide a complete Destination and Event Management service throughout the Kenya and Tanzania. We have a well-established reputation earned through the quality and flexibility of our services. We provide quantifiable success for our clients – ensuring their return in the future .We’ve now emerged as one of the premiere<span class="wild"> SAFARI</span> companies and adventure tourism outfitters in<span class="wild"> EAST AFRICA.</span>
+                Combining friendly professional service with ‘fresh’ thinking, We offer creative ideas that are both cost transparent and practical, which satisfy the demanding budgets and adventure. We invite you to join us as we explore the 8th wonder of the world…<span class="tour">MAASAI MARA.</span> We specialize in Tailor made trips to suit your need.
+                
+                About Kenya……….where we take you Kenya is certainly the place to be if you are looking for once in a life time adventure, relaxation, and enjoyment.<span class="wild">[About Us]</span></p>
+        </div>
+        <div class="image">
+            <img src="image/safaritours/13.jpeg" alt="Featured Image">
+        </div>
+    </section>
+    <h2>Featured Safaris</h2>
+    <div class="card-container">
+
+        <div class="tour-card">
+          <img src="image/safaritours/11.jpeg" alt="Lion Safari">
+          <div class="tour-title">6 days Masai Mara – Lake Nakuru – Amboseli Safaris</div>
+          <div class="tour-price">$1,700.00</div>
+          <a href="catalogue.html" class="book-button">Book Now</a>
+        </div>
+    
+        <div class="tour-card">
+          <img src="image/safaritours/8.jpeg" alt="Aberdares Gate">
+          <div class="tour-title">5 Days / 4 Nights – Hiking and Walking in Aberdares</div>
+          <div class="tour-price">$1,050.00</div>
+          <a href="catalogue.html" class="book-button">Book Now</a>
+        </div>
+    
+      </div>
+
+      <div class="card-container">
+
+        <div class="tour-card">
+          <img src="image/safaritours/6.jpeg" alt="Lion Safari">
+          <div class="tour-title">5 Days Masai Mara – Lake Nakuru – Lake Naivasha</div>
+          <div class="tour-price">$1,700.00</div>
+          <a href="catalogue.html" class="book-button">Book Now</a>
+        </div>
+    
+        <div class="tour-card">
+          <img src="image/safaritours/12.jpeg" alt="Aberdares Gate">
+          <div class="tour-title">4 days Masai mara – L. Nakuru-Amboseli Camping Safari</div>
+          <div class="tour-price">$1,050.00</div>
+          <a href="catalogue.html" class="book-button">Book Now</a>
+        </div>
+    
+      </div>
+
+      <div class="card-container">
+
+        <div class="tour-card">
+          <img src="image/safaritours/1.jpeg" alt="Lion Safari">
+          <div class="tour-title">3 Days Wildebeest Migration Safari</div>
+          <div class="tour-price">$1,700.00</div>
+          <a href="catalogue.html" class="book-button">Book Now</a>
+        </div>
+    
+        <div class="tour-card">
+          <img src="image/safaritours/10.jpeg" alt="Aberdares Gate">
+          <div class="tour-title">3 Days Masai Mara Joining Safari</div>
+          <div class="tour-price">$1,050.00</div>
+          <a href="catalogue.html" class="book-button">Book Now</a>
+        </div>
+      </div>
+
+      <h1><span class="wild">Customer</span><span class="tour"> Reviews</span></h1>
+  <div id="reviews-container"></div>
+
+  <script>
+    const reviews = [
+      { 
+        name: "Alice", 
+        rating: 5, 
+        comment: "This exceeded my expectations. The quality and service were top-notch!",
+        image: "https://randomuser.me/api/portraits/women/65.jpg",
+        timestamp: "2025-04-09T10:00:00Z",
+        reply: "Thank you, Alice! We're so glad you loved it. – The Team"
+      },
+      { 
+        name: "Bob", 
+        rating: 4, 
+        comment: "Great value for money. Would purchase again.",
+        image: "https://randomuser.me/api/portraits/men/45.jpg",
+        timestamp: "2025-04-07T14:30:00Z"
+      },
+      { 
+        name: "Charlie", 
+        rating: 3, 
+        comment: "Decent experience, though there’s room for improvement.",
+        image: "https://randomuser.me/api/portraits/men/30.jpg",
+        timestamp: "2025-04-05T08:00:00Z",
+        reply: "Thanks for the feedback, Charlie. We’ll work on improving those areas!"
+      },
+    ];
+
+    function timeAgo(dateString) {
+      const now = new Date();
+      const then = new Date(dateString);
+      const seconds = Math.floor((now - then) / 1000);
+      const intervals = {
+        year: 31536000,
+        month: 2592000,
+        week: 604800,
+        day: 86400,
+        hour: 3600,
+        minute: 60,
+      };
+
+      for (const [key, value] of Object.entries(intervals)) {
+        const time = Math.floor(seconds / value);
+        if (time > 1) return `${time} ${key}s ago`;
+        if (time === 1) return `1 ${key} ago`;
+      }
+
+      return "just now";
+    }
+
+    const container = document.getElementById("reviews-container");
+
+    reviews.forEach(review => {
+      const div = document.createElement("div");
+      div.className = "review";
+
+      div.innerHTML = `
+        <img class="profile-pic" src="${review.image}" alt="${review.name}">
+        <div class="review-content">
+          <div class="name">${review.name}</div>
+          <div class="timestamp">${timeAgo(review.timestamp)}</div>
+          <div class="rating">${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}</div>
+          <div class="comment">${review.comment}</div>
+          ${review.reply ? `<div class="reply">${review.reply}</div>` : ""}
+        </div>
+      `;
+
+      container.appendChild(div);
+    });
+  </script>
+  <style>
+    #reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 0 20px;
+  margin-bottom: 40px;
+  }
+  .review:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #d0d0d0;
+}
+
+
+    .review {
+      background-color: #fff;
+      border: 1px solid #e2e2e2;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .review:hover {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .profile-pic {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .review-content {
+      flex: 1;
+    }
+
+    .name {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .timestamp {
+      font-size: 0.9em;
+      color: #999;
+      margin-bottom: 8px;
+    }
+
+    .rating {
+      color: #f5a623;
+      font-size: 1em;
+      margin-bottom: 8px;
+    }
+
+    .comment {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .reply {
+      background-color: #f0f2f5;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 0.95em;
+      color: #444;
+      border-left: 3px solid green;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+
+      .review {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .review-content {
+        margin-top: 12px;
+      }
+
+      .reply {
+        text-align: left;
+      }
+    }
+  </style>
+      <h3>Start Travelling Now</h3>
+      <h2>Nairobi Day Trips</h2>
+      <div class="day-trips">
+
+        <div class="trip">
+          <img src="image/safaritours/14.jpeg" alt="Giraffe Centre" />
+          <div class="trip-content">
+            <div class="trip-title">Giraffe Centre Day Tour Nairobi</div>
+            <div class="trip-price">$80.00</div>
+            <div class="trip-description">
+              Giraffe Rothschild centre day tour is a brief day excursion from Nairobi to giraffe centre...
+            </div>
+          </div>
+        </div>
+    
+        <div class="trip">
+          <img src="image/safaritours/15.jpeg" alt="Nairobi National Park" />
+          <div class="trip-content">
+            <div class="trip-title">1 Day Nairobi National Park Safari</div>
+            <div class="trip-price">$240.00</div>
+            <div class="trip-description">
+              Nairobi National Game Park is a unique ecosystem by being the only protected area in the world close...
+            </div>
+          </div>
+        </div>
+    
+        <div class="trip">
+          <img src="image/safaritours/16.jpeg" alt="Museum of Kenya" />
+          <div class="trip-content">
+            <div class="trip-title">National Museum of Kenya & Snake Park</div>
+            <div class="trip-price">$90.00</div>
+            <div class="trip-description">
+              Nairobi National Museum Tour travels to the Nairobi National Museum...
+            </div>
+          </div>
+        </div>
+    
+        <div class="trip">
+          <img src="image/safaritours/17.jpeg" alt="Carnivore Experience" />
+          <div class="trip-content">
+            <div class="trip-title">The Carnivore Eating Experience</div>
+            <div class="trip-price">$110.00</div>
+            <div class="trip-description">
+              The Carnivore is the ultimate ‘Beast of a Feast’ with meat options including ostrich, crocodile, and more...
+            </div>
+          </div>
+        </div>
+        <div class="trip">
+          <img src="image/safaritours/18.jpeg" alt="Carnivore Experience" />
+          <div class="trip-content">
+            <div class="trip-title">The Nairobi Museum of illusion</div>
+            <div class="trip-price">$110.00</div>
+            <div class="trip-description">
+              Get a glimpse of our all-time classic exhibits and our new and unexplored illusions. Immerse yourself in our intriguing visual, sensory, and educational experience!
+            </div>
+          </div>
+        </div>
+        <div class="trip">
+          <img src="image/safaritours/19.jpg" alt="Carnivore Experience" />
+          <div class="trip-content">
+            <div class="trip-title">Nairobi Animal Orphanage</div>
+            <div class="trip-price">$110.00</div>
+            <div class="trip-description">
+              The Nairobi Animal Orphanage is a sanctuary for orphaned and injured animals. It provides a safe haven for wildlife in need of care and rehabilitation.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="membership">
+      <h2><span class="wild">Partnership</span> & <span class="tour">Membership</span></h2>
+      <img src="image/safaritours/20.jpg" alt="Partnership" class="partnership-image">
+      <img src="image/safaritours/21.jpg" alt="Membership" class="partnership-image">
+      <img src="image/safaritours/22.jpg" alt="Membership" class="partnership-image">
+      <img src="image/safaritours/23.jpg" alt="Membership" class="partnership-image">
+      <img src="image/safaritours/24.jpg" alt="Membership" class="partnership-image">
+      <img src="image/safaritours/25.jpg" alt="Membership" class="partnership-image">
+      </div>
+    </main>
+    <style>
+      .membership {
+            text-align: center;
+            margin: 20px auto;
+            background-color: beige;
+            padding: 10px;
+            width: 100%;
+            height: 250px;
+        }
+        .partnership-image {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .partnership-image:hover {
+            transform: scale(1.1);
+            transition: transform 0.4s ease;
+        }
+        .partnership-image:nth-child(1) {
+            margin-left: 0;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px auto;
+            width: 90%;
+        }
+        .content .text {
+            width: 50%;
+            padding-right: 20px;
+        }
+        .content .text p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1.04em;
+        }
+        .content .image {
+            width: 50%;
+            text-align: center;
+        }
+        .content .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style></div></section>
+    <footer>
+      <div class="footer-section">
+        <h6><span class="wild">CONTACTS</span></h6>
+        <p><a href="">
+            <img src="image/safaritours/icons/whatsapp.png" alt="Phone Icon" class="phone-icon">
+            Phone: +254708038090 & +254110565273</a>
+        </p>
+        <p>
+          <a href="">
+            <img src="image/safaritours/icons/gmail.png" alt="Phone Icon" class="gmail-icon">
+            Email: wildtours@yahoo.com</a>
+        </p>
+        <p>
+          <a href="">
+            <img src="image/safaritours/icons/facebook.png" alt="Phone Icon" class="facebook-icon">
+            facebook@wildsafaris.com</a>
+        </p>
+        <p>
+          <a href="">
+            <img src="image/safaritours/icons/instagram.png" alt="Phone Icon" class="instargram-icon">
+            instagram@wildtours.com</a>
+        </p>
+        <p>
+          <a href="">
+            <img src="image/safaritours/icons/twitter.png" alt="Phone Icon" class="twiter-icon">
+            x@wildtoursandsafaris.com</a>
+        </p>
+    </div>
+    <div class="footer-section">
+      <h6><span class="tour">LOCATIONS</span></h6>
+      <p><span class="branch">Main Branch </span></p>
+      <p>
+          <img src="image/safaritours/icons/google-maps.png" alt="Phone Icon" class="google-maps-icon">
+          Dedan Kimathi Avenue,
+      </p>
+      <p>Mikindani Road Mombasa,</p>
+      <p >KENYA.</p>
+      <p><span class="branch">Other Branches</span></p>
+      <p>
+          <img src="image/safaritours/icons/google-maps.png" alt="Phone Icon" class="google-maps-icon">
+          Mama Ngina Drive,
+      </p>
+      <p>Mombasa,KENYA.</p>
+    </div>
+    <div class="footer-section">
+      <h6><span class="wild">TOURS</span></h6>
+      <a href="safaritour.html">
+      <p>2 Days Masai Mara Safari</p></a>
+      <a href="safaritour.html"><p>1 Day- Hiking and Walking in Mt.Longonot Safari</p></a>
+      <a href="safaritour.html"><p>3 Days Wildebeest Migration Safari</p></a>
+      <a href="safaritour.html"><p>4 days Masai mara – L. Nakuru-Amboseli Camping Safari</p></a>
+      <a href="safaritour.html"><p>5 Days Masai Mara – Lake Nakuru – Lake Naivasha</p></a>
+      <a href="safaritour.html"><p>5 Days / 4 Nights – Hiking and Walking in Aberdares</p></a> 
+      </a>
+    </div>
+    <div class="footer-section">
+      <h6><span class="tour">DEVELOPED BY</span></h6>
+      <div class="developer">
+            <img src="image/safaritours/icons/CODEXPLORER (2).png" alt="developer">
+        </div>
+    </div>
+
+    </footer>
+    <style>
+.footer-section a {
+        text-decoration: none;
+        color: #000;
+      }
+.footer-section a:hover {
+        color: brown;
+      }
+h6 {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.developer img {
+        width: 250px;
+        height: 90px; 
+        border-radius: 0%; 
+        margin-top: 20px;
+      }
+.phone-icon {
+  width: 25px; 
+  height: 25px;
+      }
+.facebook-icon {
+  width: 25px;  /* Adjust the icon size */
+  height: 25px; /* Adjust the icon size */
+}
+.twiter-icon {
+  width: 25px;  /* Adjust the icon size */
+  height: 25px; /* Adjust the icon size */
+}
+.instargram-icon {
+  width: 25px;  /* Adjust the icon size */
+  height: 25px; /* Adjust the icon size */
+}
+.gmail-icon {
+    width: 25px;  /* Adjust the icon size */
+    height: 25px; /* Adjust the icon size */
+}
+.google-maps-icon {
+    width: 25px;
+    height: 25px;
+}
+footer {
+    display: grid;                              
+    grid-template-columns: repeat(4, 1fr);       
+    gap: 20px;                                    
+    padding: 20px;                                
+    background-color:grey;
+    background-image: url('image/safaritours/9.jpeg');
+    background-size: cover;
+    box-shadow: #111;                     
+    color: rgb(0, 0, 0);                     
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 60px;
+  }
+  footer p {
+    font-size: 0.9em;
+    text-align: left;
+  }
+        h5 {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 10px;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 1px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: brown;
+            letter-spacing: 5px;
+            text-decoration: overline;
+        }
+        h4 {
+            letter-spacing: 1px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: green;
+        }
+        .slideshow {
+            position: relative;
+            width: 75%;
+           
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides img {
+            width: 100%;
+            display: none;
+            height: 400px;
+        }
+        .slides img:first-child {
+            display: block;
+        }
+    </style>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides img');
+        setInterval(() => {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.display = 'block';
+        }, 3000);
+    </script>
+</body>
+</html>

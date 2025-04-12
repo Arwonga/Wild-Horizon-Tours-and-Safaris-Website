@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Safari Booking Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      padding: 20px;
+      display: flex;
+      gap: 40px;
+    }
+
+    .cart-container {
+      flex: 3;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .cart-totals {
+      flex: 1;
+      border: 1px solid #ddd;
+      padding: 20px;
+      background: #fff;
+    }
+
+    .cart-totals h3 {
+      font-size: 20px;
+      color: #6b2e00;
+    }
+
+    .totals-item {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      font-size: 18px;
+      color: #6b2e00;
+    }
+
+    .apply-coupon, .checkout-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .quantity-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity-box button {
+      padding: 5px 10px;
+      margin: 0 5px;
+    }
+
+    .price {
+      color: #6b2e00;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cart-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="image/safaritours/15.jpeg" alt="Tour Image" width="150" height="100" />
+            <div>
+              <strong>6 days Masai Mara – Lake Nakuru – Amboseli Safari</strong><br>
+              Deposit: $680.00<br>
+              Future Payments: $2,720.00
+            </div>
+          </td>
+          <td>$1,700.00</td>
+          <td>
+            <div class="quantity-box">
+              <button onclick="changeQty(-1)">-</button>
+              <input type="text" id="qty" value="2" readonly style="width: 30px; text-align:center;" />
+              <button onclick="changeQty(1)">+</button>
+            </div>
+          </td>
+          <td class="price" id="subtotal">$3,400.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top: 20px;">
+      <input type="text" placeholder="Coupon code" />
+      <button class="apply-coupon">Apply coupon</button>
+    </div>
+  </div>
+
+  <div class="cart-totals">
+    <h3>Cart totals</h3>
+    <div class="totals-item">Subtotal: <span id="cart-subtotal">$3,400.00</span></div>
+    <div class="totals-item highlight">Total: <span id="cart-total">$3,400.00</span></div>
+    <div class="totals-item">Pay 20% Deposit: $<span id="deposit">680.00</span></div>
+    <div class="totals-item">Future Payments: $<span id="future">2,720.00</span></div>
+    <button class="checkout-btn">Proceed to checkout</button>
+  </div>
+
+  <script>
+    let basePrice = 1700;
+    let qty = 2;
+
+    function changeQty(change) {
+      qty = Math.max(1, qty + change);
+      document.getElementById("qty").value = qty;
+      const subtotal = basePrice * qty;
+      const deposit = subtotal * 0.2;
+      const future = subtotal - deposit;
+
+      document.getElementById("subtotal").innerText = `$${subtotal.toFixed(2)}`;
+      document.getElementById("cart-subtotal").innerText = `$${subtotal.toFixed(2)}`;
+      document.getElementById("cart-total").innerText = `$${subtotal.toFixed(2)}`;
+      document.getElementById("deposit").innerText = deposit.toFixed(2);
+      document.getElementById("future").innerText = future.toFixed(2);
+    }
+  </script>
+
+</body>
+</html>
